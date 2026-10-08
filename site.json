@@ -1,0 +1,22 @@
+{
+  "base_url": "https://sergiothefirst.github.io/kto-chto/",
+  "preorder_url": "",
+  "vars": {
+    "product": "Кто-что",
+    "email": "pochta-ne-zadana@example.invalid",
+    "price_protokol": "2&nbsp;900&nbsp;₽",
+    "price_kabinet": "9&nbsp;900&nbsp;₽",
+    "price_buro": "29&nbsp;900&nbsp;₽",
+    "calls_protokol": "100",
+    "calls_kabinet": "500",
+    "seats_buro": "5",
+    "updates_months": "12",
+    "renewal_share": "40&nbsp;%"
+  },
+  "sources": {
+    "price_protokol, price_kabinet, price_buro, calls_protokol, calls_kabinet, seats_buro": "оффер v1 от 2026-09-29 (внутренний документ)",
+    "updates_months, renewal_share": "стратегия монетизации, § 1 п. 3 и § 7 п. 8 (внутренний документ)",
+    "ошибка распознавания «примерно одно слово из десяти»": "замер GigaAM v3 на колл-центровой речи — 9,5 % ошибочных слов (внутренний документ)",
+    "email": "владелец; пока не задан — проверки не пропустят выкладку"
+  }
+}

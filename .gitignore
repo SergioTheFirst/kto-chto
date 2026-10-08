@@ -1,0 +1,6 @@
+_site/
+_shots/
+__pycache__/
+graphify-out/
+.env
+*.key

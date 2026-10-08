@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>${title}</title>
+<meta name="description" content="${description}">
+<link rel="canonical" href="${canonical}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${product}">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${description}">
+<meta property="og:url" content="${canonical}">
+<meta property="og:image" content="${base}og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="${root}favicon.svg" type="image/svg+xml">
+<link rel="preload" href="${root}fonts/protokol-serif-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="${root}style.css">
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="masthead">
+  <a class="brand" href="${root}"><span class="brand-mark" aria-hidden="true">§</span>${product}</a>
+  <nav aria-label="Разделы">
+    <a href="${root}kak-eto-rabotaet/">Как работает</a>
+    <a href="${root}primer-protokola/">Пример</a>
+    <a href="${root}ceny/">Цены</a>
+    <a href="${root}voprosy/">Вопросы</a>
+  </nav>
+</header>
+<main id="main">
+${body}
+</main>
+<footer class="colophon">
+  <p>«${product}» — программа для небольших отделов продаж: протокол договорённостей из записей звонков. Работает на вашем компьютере. Сейчас в разработке.</p>
+  <p>По теме: <a href="${root}kontrol-dogovorennostey/">контроль договорённостей</a> · <a href="${root}kontrol-zvonkov-menedzherov/">контроль звонков менеджеров</a> · <a href="${root}protokol-telefonnogo-razgovora/">протокол телефонного разговора</a> · <a href="${root}transkribaciya-zvonkov/">транскрибация звонков</a> · <a href="${root}rechevaya-analitika/">речевая аналитика</a> · <a href="${root}zapisi-zvonkov-iz-ats/">записи звонков из АТС</a></p>
+  <p>Сайт ничего не собирает: ни счётчиков, ни cookies, ни форм. <a href="${root}privatnost/">Приватность</a> · <a href="mailto:${email}">${email}</a></p>
+</footer>
+</body>
+</html>
