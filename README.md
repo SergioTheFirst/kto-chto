@@ -8,7 +8,7 @@
 ```
 python build.py                 # site/ + site.json -> _site/
 python tests/check.py --draft   # проверки; без --draft — как в CI (требует заданную почту)
-python tools/shots.py           # снимки 360/430/721/768/1440 и тёмной темы в _shots/
+python tools/shots.py           # снимки 360/430/721/768/1440 в _shots/
 python tools/shots.py og        # перерисовать site/static/og.png из tools/og.html
 python -m http.server -d _site  # просмотр; ссылки строятся от base_url, поэтому для
                                 # локального просмотра удобнее tools/shots.py
@@ -35,6 +35,6 @@ python -m http.server -d _site  # просмотр; ссылки строятс�
 
 ## Лицензии чужого
 
-- Шрифт заголовков — изменённый PT Serif Bold (ParaType, SIL OFL 1.1), см. `site/static/fonts/`.
+- Шрифт заголовков — подмножество Fira Sans Extra Condensed Black (Mozilla и Telefonica, SIL OFL 1.1), см. `site/static/fonts/`.
 - Набор проверок `tests/check.py` устроен по образцу `landing/tests/check.py` проекта
   [amanu](https://github.com/gsamat/amanu) (MIT, © Samat Galimov); код написан заново.

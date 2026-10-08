@@ -192,7 +192,7 @@ def main():
     check("robots.txt указывает sitemap", f"Sitemap: {BASE}sitemap.xml" in robots)
 
     css = (SITE / "style.css").read_text(encoding="utf-8")
-    check("CSS: тёмная тема", "prefers-color-scheme: dark" in css)
+    check("CSS: тёмная схема объявлена", "color-scheme: dark" in css)
     check("CSS: prefers-reduced-motion", "prefers-reduced-motion" in css)
     check("CSS: нет внешних url()/@import",
           not re.search(r"url\(\s*['\"]?(https?:)?//|@import", css))

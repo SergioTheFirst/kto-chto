@@ -2,8 +2,8 @@
 """Снимки Chrome без окна (только стандартная библиотека + установленный Chrome/Edge).
 
     python tools/shots.py og     перерисовать site/static/og.png из tools/og.html
-    python tools/shots.py        снимки всех страниц _site и 404 на 360/430/721/768/1440 и
-                                 тёмной темы на 430 в _shots/ (для ревью вида)
+    python tools/shots.py        снимки всех страниц _site и 404 на 360/430/721/768/1440
+                                 в _shots/ (для ревью вида)
 """
 
 import functools
@@ -36,7 +36,7 @@ def browser():
 MIN_WINDOW = 800   # окно Chrome уже ~500 px не сжимается — узкие ширины через iframe
 
 
-def shot(url, out, width, height, dark=False):
+def shot(url, out, width, height):
     target = url
     if width < MIN_WINDOW:
         # /__wait держит запрос открытым: виртуальное время Chrome стоит, пока iframe
@@ -51,8 +51,6 @@ def shot(url, out, width, height, dark=False):
     cmd = [browser(), "--headless=new", "--disable-gpu", "--hide-scrollbars",
            "--force-device-scale-factor=1", f"--window-size={max(width, MIN_WINDOW)},{height}",
            "--virtual-time-budget=3000", f"--screenshot={out}", target]
-    if dark:
-        cmd.insert(2, "--force-dark-mode")
     subprocess.run(cmd, check=True, timeout=120, capture_output=True)
     if width < MIN_WINDOW:
         try:
@@ -105,7 +103,6 @@ def main():
         url = base + rel
         for width, height in WIDTHS.items():
             shot(url, OUT / f"{name}-{width}.png", width, height)
-        shot(url, OUT / f"{name}-430-dark.png", 430, WIDTHS[430], dark=True)
         print(name)
     server.shutdown()
 
