@@ -3,7 +3,6 @@ title: Пример протокола звонка и реестра обеща
 description: Как выглядит протокол договорённостей из записи звонка: кто кому что обещал и к какому сроку, цитата и время в записи. И реестр обещаний по клиенту за все звонки. Пример на выдуманном разговоре.
 -->
 <section class="block">
-  <p class="kicker">Пример</p>
   <h1>Протокол звонка и реестр обещаний по&nbsp;клиенту</h1>
   <p class="lede">Так будут выглядеть два документа, которые «${product}» делает из записей: протокол каждого звонка и реестр обещаний по каждому клиенту за все звонки сразу.</p>
   <p class="note">Разговоры выдуманы для иллюстрации. Имена, компания и даты не существуют.</p>
@@ -18,15 +17,15 @@ description: Как выглядит протокол договорённост
     <table class="stack">
       <thead><tr><th>Кто → кому</th><th>Что</th><th>Срок</th><th>Цитата</th><th>Время</th></tr></thead>
       <tbody>
-        <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">прислать коммерческое предложение с оптовой ценой</td><td data-label="Срок">завтра</td><td data-label="Цитата"><mark>«КП с оптовой ценой пришлю вам завтра до обеда»</mark></td><td data-label="Время"><span class="tc">01:12 ▶</span></td></tr>
-        <tr><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">согласовать объём с директором</td><td data-label="Срок">до пятницы</td><td data-label="Цитата"><mark>«С директором объём согласую до пятницы»</mark></td><td data-label="Время"><span class="tc">03:05 ▶</span></td></tr>
-        <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">зафиксировать цену до конца месяца</td><td data-label="Срок">31.10</td><td data-label="Цитата"><mark>«Цену держим до конца месяца»</mark></td><td data-label="Время"><span class="tc">04:48 ▶</span></td></tr>
+        <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">прислать коммерческое предложение с оптовой ценой</td><td data-label="Срок">завтра</td><td data-label="Цитата"><mark>«КП с оптовой ценой пришлю вам завтра до обеда»</mark></td><td data-label="Время"><span class="tc">01:12</span></td></tr>
+        <tr><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">согласовать объём с директором</td><td data-label="Срок">до пятницы</td><td data-label="Цитата"><mark>«С директором объём согласую до пятницы»</mark></td><td data-label="Время"><span class="tc">03:05</span></td></tr>
+        <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">зафиксировать цену до конца месяца</td><td data-label="Срок">31.10</td><td data-label="Цитата"><mark>«Цену держим до конца месяца»</mark></td><td data-label="Время"><span class="tc">04:48</span></td></tr>
       </tbody>
     </table>
     <h3>Не согласовано</h3>
-    <p>Условия отсрочки платежа: клиент ответил <mark>«это потом обсудим»</mark> <span class="tc">05:20 ▶</span></p>
+    <p>Условия отсрочки платежа: клиент ответил <mark>«это потом обсудим»</mark> <span class="tc">05:20</span></p>
     <h3>Противоречия</h3>
-    <p>Сначала <mark>«нам нужно двести штук»</mark> <span class="tc">00:41 ▶</span>, затем <mark>«на первое время хватит ста»</mark> <span class="tc">03:30 ▶</span></p>
+    <p>Сначала <mark>«нам нужно двести штук»</mark> <span class="tc">00:41</span>, затем <mark>«на первое время хватит ста»</mark> <span class="tc">03:30</span></p>
   </div>
 </section>
 
@@ -39,11 +38,11 @@ description: Как выглядит протокол договорённост
     <table class="stack">
       <thead><tr><th>Звонок</th><th>Кто → кому</th><th>Что</th><th>Срок</th><th>Отметка</th></tr></thead>
       <tbody>
-        <tr><td data-label="Звонок">01.10 <span class="tc">02:14 ▶</span></td><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">прислать реквизиты для договора</td><td data-label="Срок">03.10</td><td data-label="Отметка">выполнено с опозданием (07.10)</td></tr>
-        <tr><td data-label="Звонок">12.10 <span class="tc">01:12 ▶</span></td><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">прислать КП с оптовой ценой</td><td data-label="Срок">13.10</td><td data-label="Отметка">выполнено (13.10)</td></tr>
-        <tr><td data-label="Звонок">12.10 <span class="tc">03:05 ▶</span></td><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">согласовать объём с директором</td><td data-label="Срок">16.10</td><td data-label="Отметка">просрочено</td></tr>
-        <tr><td data-label="Звонок">12.10 <span class="tc">04:48 ▶</span></td><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">держать цену до конца месяца</td><td data-label="Срок">31.10</td><td data-label="Отметка">в силе</td></tr>
-        <tr><td data-label="Звонок">20.10 <span class="tc">00:58 ▶</span></td><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">дать скидку на доставку</td><td data-label="Срок">не назван</td><td data-label="Отметка">срок не назван — уточнить</td></tr>
+        <tr><td data-label="Звонок">01.10 <span class="tc">02:14</span></td><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">прислать реквизиты для договора</td><td data-label="Срок">03.10</td><td data-label="Отметка">выполнено с опозданием (07.10)</td></tr>
+        <tr><td data-label="Звонок">12.10 <span class="tc">01:12</span></td><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">прислать КП с оптовой ценой</td><td data-label="Срок">13.10</td><td data-label="Отметка">выполнено (13.10)</td></tr>
+        <tr><td data-label="Звонок">12.10 <span class="tc">03:05</span></td><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">согласовать объём с директором</td><td data-label="Срок">16.10</td><td data-label="Отметка">просрочено</td></tr>
+        <tr><td data-label="Звонок">12.10 <span class="tc">04:48</span></td><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">держать цену до конца месяца</td><td data-label="Срок">31.10</td><td data-label="Отметка">в силе</td></tr>
+        <tr><td data-label="Звонок">20.10 <span class="tc">00:58</span></td><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">дать скидку на доставку</td><td data-label="Срок">не назван</td><td data-label="Отметка">срок не назван — уточнить</td></tr>
       </tbody>
     </table>
   </div>

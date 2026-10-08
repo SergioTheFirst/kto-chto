@@ -23,7 +23,7 @@ BROWSERS = [
     Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe"),
     Path(r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"),
 ]
-WIDTHS = {360: 9000, 430: 9000, 721: 7000, 768: 7000, 1440: 5000}
+WIDTHS = {360: 9000, 430: 9000, 721: 7000, 768: 7000, 1440: 6500}
 
 
 def browser():

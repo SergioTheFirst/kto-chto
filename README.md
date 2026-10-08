@@ -20,7 +20,7 @@ python -m http.server -d _site  # просмотр; ссылки строятс�
 
 - `site/layout.html` — общая шапка и подвал; `site/pages/*.html` — страницы (шапка-комментарий
   `title`/`description`, дальше HTML). Подстановки `${имя}` — из `site.json` → `vars`.
-- `site/static/` — CSS, шрифт, иконка, картинка превью; копируется как есть.
+- `site/static/` — CSS, шрифты, иконка, картинка превью; копируется как есть.
 - `site.json` — адрес сайта, почта, ссылка предзаказа (пусто — кнопка «Сообщить о выходе»),
   цены и источник каждого числа.
 - `tests/check.py` — гейт выкладки: метаданные, локальность ресурсов, доступность, живые ссылки,
@@ -35,6 +35,6 @@ python -m http.server -d _site  # просмотр; ссылки строятс�
 
 ## Лицензии чужого
 
-- Шрифт заголовков — подмножество Fira Sans Extra Condensed Black (Mozilla и Telefonica, SIL OFL 1.1), см. `site/static/fonts/`.
+- Шрифты — подмножества Fira Sans Extra Condensed Black (заголовки; Mozilla и Telefonica) и Golos Text (текст; The Golos Text Project Authors), оба SIL OFL 1.1, см. `site/static/fonts/`.
 - Набор проверок `tests/check.py` устроен по образцу `landing/tests/check.py` проекта
   [amanu](https://github.com/gsamat/amanu) (MIT, © Samat Galimov); код написан заново.

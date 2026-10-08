@@ -18,24 +18,26 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="${root}favicon.svg" type="image/svg+xml">
 <link rel="preload" href="${root}fonts/fira-sans-extra-condensed-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${root}fonts/golos-text.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${root}style.css">
 </head>
 <body>
 <a class="skip" href="#main">К содержанию</a>
+<a class="strip" href="${cta_href}"><span>«<span translate="no">${product}</span>» в разработке</span><span>${cta_text}</span></a>
 <header class="masthead">
-  <a class="brand" href="${root}">${product}</a>
+  <a class="brand" href="${root}" translate="no">${product}</a>
   <nav aria-label="Разделы">
     <a href="${root}kak-eto-rabotaet/">Как работает</a>
     <a href="${root}primer-protokola/">Пример</a>
     <a href="${root}ceny/">Цены</a>
     <a href="${root}voprosy/">Вопросы</a>
-    <a class="btn nav-cta" href="${cta_href}">${cta_text}</a>
   </nav>
 </header>
 <main id="main">
 ${body}
 </main>
 <footer class="colophon">
+  <p class="colophon-mark" aria-hidden="true" translate="no">${product}</p>
   <p>«${product}» — программа для небольших отделов продаж: протокол договорённостей из записей звонков. Работает на вашем компьютере. Сейчас в разработке.</p>
   <p>По теме: <a href="${root}kontrol-dogovorennostey/">контроль договорённостей</a> · <a href="${root}kontrol-zvonkov-menedzherov/">контроль звонков менеджеров</a> · <a href="${root}protokol-telefonnogo-razgovora/">протокол телефонного разговора</a> · <a href="${root}transkribaciya-zvonkov/">транскрибация звонков</a> · <a href="${root}rechevaya-analitika/">речевая аналитика</a> · <a href="${root}zapisi-zvonkov-iz-ats/">записи звонков из АТС</a></p>
   <p>Сайт ничего не собирает: ни счётчиков, ни cookies, ни форм. <a href="${root}privatnost/">Приватность</a> · <a href="mailto:${email}">${email}</a></p>

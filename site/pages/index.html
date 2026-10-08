@@ -5,35 +5,38 @@ description: Программа для небольших отделов про�
 <section class="block hero">
   <p class="kicker">Речевая аналитика без абонентской платы и без облака</p>
   <h1>Кто что <mark>пообещал</mark> в&nbsp;ваших звонках</h1>
-  <p class="lede">«${product}» — программа для отделов продаж из одного–пяти человек. Она берёт записи звонков из вашей АТС и составляет протокол договорённостей: кто, кому, что и к какому сроку пообещал. У каждой строки — цитата и время в записи, её можно переслушать.</p>
-  <p class="lede">Программа работает на вашем компьютере: записи никуда не уходят. Сейчас она в разработке.</p>
-  <div class="actions">
-    <a class="btn" href="${cta_href}">${cta_text}</a>
-    <a href="${root}primer-protokola/">Посмотреть пример протокола</a>
+  <div class="hero-grid">
+    <div>
+      <p class="lede">«${product}» — программа для отделов продаж из одного–пяти человек. Она берёт записи звонков из вашей АТС и составляет протокол договорённостей: кто, кому, что и к какому сроку пообещал. У каждой строки — цитата и время в записи, её можно переслушать.</p>
+      <p class="lede">Программа работает на вашем компьютере: записи никуда не уходят. Сейчас она в разработке.</p>
+      <div class="actions">
+        <a class="btn" href="${cta_href}">${cta_text}</a>
+        <a href="${root}primer-protokola/">Посмотреть пример протокола</a>
+      </div>
+    </div>
+    <section class="hero-proof" aria-labelledby="example">
+      <h2 id="example" class="visually-hidden">Так выглядит протокол звонка</h2>
+      <div class="sheet">
+        <p class="stamp" aria-hidden="true">Пример<small>разговор выдуман</small></p>
+        <p class="sheet-head">Звонок 12.10.2026 · 6&nbsp;мин 40&nbsp;с · менеджер (вы) ↔ клиент, ООО «Пример»</p>
+        <p class="note">Разговор выдуман для иллюстрации. Имена и компания не существуют.</p>
+        <h3>Договорённости</h3>
+        <table class="stack">
+          <thead><tr><th>Кто → кому</th><th>Что</th><th>Срок</th><th>Цитата</th><th>Время</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">прислать коммерческое предложение с оптовой ценой</td><td data-label="Срок">завтра</td><td data-label="Цитата"><mark>«КП с оптовой ценой пришлю вам завтра до обеда»</mark></td><td data-label="Время"><span class="tc">01:12</span></td></tr>
+            <tr><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">согласовать объём с директором</td><td data-label="Срок">до пятницы</td><td data-label="Цитата"><mark>«С директором объём согласую до пятницы»</mark></td><td data-label="Время"><span class="tc">03:05</span></td></tr>
+            <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">зафиксировать цену до конца месяца</td><td data-label="Срок">31.10</td><td data-label="Цитата"><mark>«Цену держим до конца месяца»</mark></td><td data-label="Время"><span class="tc">04:48</span></td></tr>
+          </tbody>
+        </table>
+        <h3>Не согласовано</h3>
+        <p>Условия отсрочки платежа: клиент ответил <mark>«это потом обсудим»</mark> <span class="tc">05:20</span></p>
+        <h3>Противоречия</h3>
+        <p>Сначала <mark>«нам нужно двести штук»</mark> <span class="tc">00:41</span>, затем <mark>«на первое время хватит ста»</mark> <span class="tc">03:30</span></p>
+      </div>
+      <p class="note">Если цитаты нет в расшифровке звонка, строка в протокол не попадает. <a href="${root}primer-protokola/">Полный пример — с реестром по клиенту</a>.</p>
+    </section>
   </div>
-</section>
-
-<section class="block" aria-labelledby="example">
-  <h2 id="example">Так выглядит протокол звонка</h2>
-  <div class="sheet">
-    <p class="stamp" aria-hidden="true">Пример<small>разговор выдуман</small></p>
-    <p class="sheet-head">Звонок 12.10.2026 · 6&nbsp;мин 40&nbsp;с · менеджер (вы) ↔ клиент, ООО «Пример»</p>
-    <p class="note">Разговор выдуман для иллюстрации. Имена и компания не существуют.</p>
-    <h3>Договорённости</h3>
-    <table class="stack">
-      <thead><tr><th>Кто → кому</th><th>Что</th><th>Срок</th><th>Цитата</th><th>Время</th></tr></thead>
-      <tbody>
-        <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">прислать коммерческое предложение с оптовой ценой</td><td data-label="Срок">завтра</td><td data-label="Цитата"><mark>«КП с оптовой ценой пришлю вам завтра до обеда»</mark></td><td data-label="Время"><span class="tc">01:12 ▶</span></td></tr>
-        <tr><td data-label="Кто → кому">Клиент → вы</td><td data-label="Что">согласовать объём с директором</td><td data-label="Срок">до пятницы</td><td data-label="Цитата"><mark>«С директором объём согласую до пятницы»</mark></td><td data-label="Время"><span class="tc">03:05 ▶</span></td></tr>
-        <tr><td data-label="Кто → кому">Вы → клиент</td><td data-label="Что">зафиксировать цену до конца месяца</td><td data-label="Срок">31.10</td><td data-label="Цитата"><mark>«Цену держим до конца месяца»</mark></td><td data-label="Время"><span class="tc">04:48 ▶</span></td></tr>
-      </tbody>
-    </table>
-    <h3>Не согласовано</h3>
-    <p>Условия отсрочки платежа: клиент ответил <mark>«это потом обсудим»</mark> <span class="tc">05:20 ▶</span></p>
-    <h3>Противоречия</h3>
-    <p>Сначала <mark>«нам нужно двести штук»</mark> <span class="tc">00:41 ▶</span>, затем <mark>«на первое время хватит ста»</mark> <span class="tc">03:30 ▶</span></p>
-  </div>
-  <p class="note">Если цитаты нет в расшифровке звонка, строка в протокол не попадает. <a href="${root}primer-protokola/">Полный пример — с реестром по клиенту</a>.</p>
 </section>
 
 <section class="block" aria-labelledby="how">

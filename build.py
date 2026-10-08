@@ -87,6 +87,9 @@ def main():
         values["body"] = render(body, values, src.name)
         head, tag, rest = render(layout, values, f"layout для {src.name}").partition("<body")
         html = head + tag + DASH.sub("&nbsp;— ", rest)
+        if path:  # первая ссылка на страницу — в меню шапки: отмечаем текущий раздел
+            link = f'<a href="{v["root"]}{path}"'
+            html = html.replace(link + ">", link + ' aria-current="page">', 1)
         dest = OUT / "404.html" if slug == "404" else OUT / path / "index.html"
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(html, encoding="utf-8")
